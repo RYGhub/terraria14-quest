@@ -96,7 +96,7 @@ namespace RoyalTerraria14Quest.Tiles
             }
             else
             {
-                Main.NewText("Some jewels are missing.", Color.Yellow);
+                Main.NewText(string.Format("{0} jewels are missing.", 3-World.RoyalWorld.jewelsActivated), Color.Yellow);
                 Main.PlaySound(SoundLoader.customSoundType, -1, -1, mod.GetSoundSlot(SoundType.Custom, "Sounds/MeepMerp.ogg"));
             }
         }
